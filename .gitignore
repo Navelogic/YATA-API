@@ -46,4 +46,4 @@ out/
 *.tar.gz
 *.rar
 
-local.properties
+application-dev.properties
