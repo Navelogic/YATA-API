@@ -1,16 +1,16 @@
-package br.com.yata.artifact.Model.Task;
+package br.com.yata.artifact.Model.Group;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity(name = "Task")
-@Table(name = "tasks")
+@Entity(name = "Group")
+@Table(name = "groups")
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Task {
+public class Group {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
