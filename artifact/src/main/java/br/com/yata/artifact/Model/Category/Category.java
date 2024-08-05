@@ -1,7 +1,11 @@
 package br.com.yata.artifact.Model.Category;
 
+import br.com.yata.artifact.Model.Task.Task;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity(name = "Category")
 @Table(name = "categories")
@@ -18,4 +22,7 @@ public class Category {
 
     private String name;
     private String description;
+
+    @ManyToMany(mappedBy = "categories")
+    private Set<Task> tasks = new HashSet<>();
 }
